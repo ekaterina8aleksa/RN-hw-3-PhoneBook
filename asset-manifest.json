@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/RN-hw-3-PhoneBook/static/css/main.5f361e03.chunk.css",
+    "main.js": "/RN-hw-3-PhoneBook/static/js/main.fb2e80a8.chunk.js",
+    "main.js.map": "/RN-hw-3-PhoneBook/static/js/main.fb2e80a8.chunk.js.map",
+    "runtime-main.js": "/RN-hw-3-PhoneBook/static/js/runtime-main.800121dd.js",
+    "runtime-main.js.map": "/RN-hw-3-PhoneBook/static/js/runtime-main.800121dd.js.map",
+    "static/js/2.c884039c.chunk.js": "/RN-hw-3-PhoneBook/static/js/2.c884039c.chunk.js",
+    "static/js/2.c884039c.chunk.js.map": "/RN-hw-3-PhoneBook/static/js/2.c884039c.chunk.js.map",
+    "index.html": "/RN-hw-3-PhoneBook/index.html",
+    "precache-manifest.795fe6720f03565fdf77dbd048aa055c.js": "/RN-hw-3-PhoneBook/precache-manifest.795fe6720f03565fdf77dbd048aa055c.js",
+    "service-worker.js": "/RN-hw-3-PhoneBook/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/RN-hw-3-PhoneBook/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.c884039c.chunk.js.LICENSE.txt": "/RN-hw-3-PhoneBook/static/js/2.c884039c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/RN-hw-3-PhoneBook/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.800121dd.js",
+    "static/js/2.c884039c.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.fb2e80a8.chunk.js"
+  ]
+}
