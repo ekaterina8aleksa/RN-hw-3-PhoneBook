@@ -32,7 +32,6 @@ class ContactForm extends Component {
                         <input
                             type="text"
                             name="name"
-                            //required="required"
                             placeholder="Enter name..."
                             value={this.state.name}
                             onChange={this.handelChange}
@@ -45,7 +44,6 @@ class ContactForm extends Component {
                         <input
                             type="tel"
                             name="number"
-                            //required="required"
                             placeholder="Enter number..."
                             value={this.state.number}
                             onChange={this.handelChange}

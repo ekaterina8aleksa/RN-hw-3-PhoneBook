@@ -10,23 +10,11 @@ import "react-toastify/dist/ReactToastify.css";
 
 class App extends Component {
     state = {
-        contacts: [
-            // { id: "id-1", name: "Rosie Simpson", number: "459-12-56" },
-            // { id: "id-2", name: "Hermione Kline", number: "443-89-12" },
-            // { id: "id-3", name: "Eden Clements", number: "645-17-79" },
-            // { id: "id-4", name: "Annie Copeland", number: "227-91-26" },
-        ],
+        contacts: [],
         filter: "",
     };
 
     componentDidMount() {
-        // const savedContacts = localStorage.getItem("contacts");
-
-        // if (savedContacts) {
-        //     this.setState({
-        //         contacts: JSON.parse(savedContacts),
-        //     });
-        // }
         const parsedContacts = getContacts("contacts");
         if (parsedContacts) {
             this.setState({ contacts: parsedContacts });
@@ -34,12 +22,6 @@ class App extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        // if (prevState.contacts !== this.state.contacts) {
-        //     localStorage.setItem(
-        //         "contacts",
-        //         JSON.stringify(this.state.contacts)
-        //     );
-        // }
         const { contacts } = this.state;
         if (contacts !== prevState.contacts) {
             setContacts("contacts", contacts);
@@ -62,15 +44,12 @@ class App extends Component {
             (contact) =>
                 contact.name.trim().toLowerCase() === name.trim().toLowerCase()
         );
-        // const checkingTel = /^\d[\d\(\)\ -]{4,14}\d$/;
-        // const validTel = checkingTel.test(number);
+
         const invalide = isNaN(number);
         if (isExist) {
-            toast.info(`${name} already exist (〒﹏〒) `); //alert("This Name is already exist");
+            toast.info(`${name} already exist (〒﹏〒) `);
         } else if (name === " " || number === " ") {
             toast.warn(`Fill the form, please ＼(°o°)／ `);
-            // } else if (!validTel) {
-            //     return toast.error(`This $(number) is not a valid phonenumber`); //alert("This Phonenumber is incorrect");
         } else if (invalide) {
             toast.info(`${number} is invalide phone number 乁( •_• )ㄏ `);
         } else {
